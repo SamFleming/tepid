@@ -35,9 +35,9 @@
             {{#if author}}
                 <section class="author">
                     <div class="author-pic" style="background-image:url({{author.image}})"></div>
-                    <h4><a href="mailto:{{author.email}}">{{author.name}}</a></h4>
+                    <h4>{{author.name}}</h4>
                     <p>{{author.bio}}</p>
-		    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
                 </section>
             {{/if}}
 
@@ -58,14 +58,6 @@
             </section>
 
         </footer>
-
-        <section class="comment">
-            <div id="post_{{id}}_comments"></div>
-            <script>(function () {var c = document.getElementById('post_{{id}}_comments'),w = c.offsetWidth;c.innerHTML = '<div class="g-comments" data-href="{{@blog.url}}{{url}}" data-width="' + w + '" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>';})();
-            </script>
-            <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
-            <noscript>Please enable JavaScript to view the <a href="https://plus.google.com/">comments powered by Google+.</a></noscript>
-        </section>
 
         {{/post}}
 
